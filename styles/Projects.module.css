@@ -1,0 +1,160 @@
+.portfolio_box {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    justify-content: center;
+  
+  }
+  
+  .portfolio_card{
+    display: flex;
+    width: 22vw;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    border-radius: 10px;
+  }
+  
+  .portfolio_card img{
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .portfolio_action_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .portfolio_action_box button{
+   background-color: black;
+   color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  
+  .see_details{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .see_more_btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  .break_line{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 0vw;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .portfolio_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .portfolio_box {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  .projects_sections{
+    display: inline;
+  }
+  
+  .projects_sections h3{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 3vh;
+  }
+  .featured_projects {
+    margin-bottom: 2rem;
+  }
+  
+  .project_card {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 12vh;
+  }
+  
+  .project_img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+  }
+  
+  .project_info {
+    padding: 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project_scope{
+    color: white;
+  }
+  .project_by{
+    color: white;
+  }
+  .project_title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .line {
+    height: 1px;
+    background-color: #ccc;
+    margin: 0.5rem 0;
+  }
+  
+  .project_description {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .view_project {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view_project:hover {
+    background-color: #0051bb;
+  }
+  
+  /* Add any additional styles for the portfolio_box and its contents here if needed */
+
+  .projects_page {
+    width: 95vw;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 0;
+    padding-bottom: 0;
+  }

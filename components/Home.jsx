@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "@/styles/Home.module.css"; // Import the CSS module
 import Footer from "./Footer";
+import Link from "next/link";
 
 export default function HomePage({userPreferences}) {
   const horizontalScrollsRef = useRef(null);
@@ -199,7 +200,7 @@ export default function HomePage({userPreferences}) {
               cases.
             </p>
             <div className={styles.portfolio_action_box}>
-              <button className={styles.see_more_btn}>see details</button>
+              <Link href={'/case_studies/1'} className={styles.see_more_btn}>see details</Link>
               <span className={styles.break_line}>
                 <span>internal</span>
                 <span>toolkit</span>
@@ -215,7 +216,7 @@ export default function HomePage({userPreferences}) {
               cases.
             </p>
             <div className={styles.portfolio_action_box}>
-              <button className={styles.see_more_btn}>see details</button>
+              <Link href={'/case_studies/1'} className={styles.see_more_btn}>see details</Link>
               <span className={styles.break_line}>
                 <span>internal</span>
                 <span>toolkit</span>
@@ -231,7 +232,7 @@ export default function HomePage({userPreferences}) {
               cases.
             </p>
             <div className={styles.portfolio_action_box}>
-              <button className={styles.see_more_btn}>see details</button>
+              <Link href={'/case_studies/1'} className={styles.see_more_btn}>see details</Link>
               <span className={styles.break_line}>
                 <span>internal</span>
                 <span>toolkit</span>

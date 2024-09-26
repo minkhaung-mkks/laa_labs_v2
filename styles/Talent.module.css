@@ -1,0 +1,206 @@
+.talentPage{
+    width: 95vw;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: white;
+}
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px rgb(200, 200, 200) solid;
+}
+.about_infos{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px rgb(200, 200, 200) solid;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}.content{
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_box{
+    display: flex;
+    width: 70%;
+    gap: 50px
+}
+.content img{
+    width: 30vw;
+}
+
+.profile_text_box, .overview-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile_title_box img{
+    width: 5vw;
+}
+
+.profile_title_box{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio_box {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    justify-content: center;
+
+}
+
+
+
+.portofolio_card{
+    display: flex;
+    width: 22vw;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    border-radius: 10px;
+}
+
+.portofolio_card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.portfolio_action_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio_action_box button{
+   background-color: black;
+   color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.see_details{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.see_more_btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.break_line{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio_box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bento_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .bento_item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .bento_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bento_item.span_2_cols {
+    grid-column: span 2;
+  }
+  
+  .bento_item.span_2_rows {
+    grid-row: span 2;
+  }
+  
+  .bento_image {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+  
+  .bento_item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .bento_item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 1024px) {
+    .bento_grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bento_grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bento_grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .bento_item.span_2_cols,
+    .bento_item.span_2_rows {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }

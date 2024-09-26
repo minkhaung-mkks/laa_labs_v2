@@ -51,7 +51,7 @@ const Navbar = () => {
       <img src="/logo.png" alt="" className={styles.logo} />
       <div className={styles.navLinks}>
         <Link href="/">home</Link>
-        <Link href="/">projects</Link>
+        <Link href="/projects">projects</Link>
         <div className={styles.dropdown}>
           <Link href="/" className={styles.dropdownToggle}>
             talents
@@ -72,22 +72,22 @@ const Navbar = () => {
           </svg>
           <div className={styles.dropdownContent}>
             <div className={styles.dropdownItemBox}>
-              <Link className={styles.dropdownItem} href="/web-development">
+              <Link className={styles.dropdownItem} href="/our_people/min-khaung-kyaw-swar">
                 <img src="/004.jpg" alt="nyunt" />
                 <h3>nyunt</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, suscipit?</p>
               </Link>
-              <Link className={styles.dropdownItem} href="/design">
+              <Link className={styles.dropdownItem} href="/our_people/min-khaung-kyaw-swar">
                 <img src="/004.jpg" alt="nyunt" />
                 <h3>nyunt</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, suscipit?</p>
               </Link>
-              <Link className={styles.dropdownItem} href="/marketing">
+              <Link className={styles.dropdownItem} href="/our_people/min-khaung-kyaw-swar">
                 <img src="/004.jpg" alt="nyunt" />
                 <h3>nyunt</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, suscipit?</p>
               </Link>
-              <Link className={styles.dropdownItem} href="/marketing">
+              <Link className={styles.dropdownItem} href="/our_people/min-khaung-kyaw-swar">
                 <img src="/004.jpg" alt="nyunt" />
                 <h3>nyunt</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, suscipit?</p>
@@ -95,7 +95,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <Link href="/">about</Link>
+        <Link href="/about">about</Link>
         
       </div>
       
