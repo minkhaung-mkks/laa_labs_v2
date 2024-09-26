@@ -11,7 +11,7 @@ export default function ExperienceMenu({ onSubmit }) {
   useEffect(() => {
     // Load cities (you can filter based on country if needed)   
 
-    setCities(citiesList.map(city => ({ value: city.name, label: city.name })));
+    setCities(citiesList.map(city => ({ value: city, label: city })));
   }, []);
 
   const handleSubmit = (e) => {
