@@ -1,0 +1,134 @@
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.629);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(10px);
+  z-index: 9;
+}
+
+.nav:hover{
+    background-color: white;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  margin-left: 3vw;
+}
+
+.navLinks {
+  display: flex;
+  gap: 5vw;
+  margin-left: 5vw;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  width: 100vw;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.dropdownItemBox{
+    display: flex;
+    width: 70%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.dropdown:hover .dropdownContent {
+    display: flex;
+}
+
+.dropdownContent a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownItem{
+    border: 1px solid #bababa;
+    width: 15vw;
+    border-radius: 10px;
+    padding: 0 1vw;
+}
+
+.contactButton {
+  padding: 0.5rem 1rem;
+  background-color: #171717;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 5vw;
+  text-decoration: none;
+}
+
+.contactButton:hover {
+  background-color: #3e3e3e;
+}
+
+
+.dropdownItem img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.dropdownIcon{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    color: black;
+}
+
+.weather {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.weather p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.weather{
+  display: flex;
+  gap: 2vw;
+}

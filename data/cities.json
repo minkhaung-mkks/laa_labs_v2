@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Abidjan",
+    "point": {
+      "lat": 5.3600,
+      "long": -4.0083
+    }
+  },
+  {
+    "name": "Abu Dhabi",
+    "point": {
+      "lat": 24.4539,
+      "long": 54.3773
+    }
+  },
+  {
+    "name": "Abuja",
+    "point": {
+      "lat": 9.0765,
+      "long": 7.3986
+    }
+  },
+  {
+    "name": "Accra",
+    "point": {
+      "lat": 5.6037,
+      "long": -0.1870
+    }
+  },
+  {
+    "name": "Addis Ababa",
+    "point": {
+      "lat": 9.0320,
+      "long": 38.7469
+    }
+  },
+  {
+    "name": "Ahmedabad",
+    "point": {
+      "lat": 23.0225,
+      "long": 72.5714
+    }
+  },
+  {
+    "name": "Aleppo",
+    "point": {
+      "lat": 36.2021,
+      "long": 37.1343
+    }
+  },
+  {
+    "name": "Alexandria",
+    "point": {
+      "lat": 31.2001,
+      "long": 29.9187
+    }
+  },
+  {
+    "name": "Algiers",
+    "point": {
+      "lat": 36.7538,
+      "long": 3.0588
+    }
+  },
+  {
+    "name": "Almaty",
+    "point": {
+      "lat": 43.2220,
+      "long": 76.8512
+    }
+  }
+]

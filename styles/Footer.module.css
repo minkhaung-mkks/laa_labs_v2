@@ -1,0 +1,55 @@
+.footer{
+    width: 95vw;
+  padding: 3vh 0;
+  margin: 0 auto;
+  margin-top: 5vh;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px 20px 0 0;
+  }
+  
+  .footer_box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer_socials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_socials_box{
+    display: flex;
+    gap: 10px;
+  }
+  .footer_socials img{
+    width: 30px;
+  }
+  
+  .footer_signup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer_signup input{
+    width: 20vw;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+  
+  .footer_signup button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(200, 200, 200);
+  }
+  .arr{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    justify-self: center; 
+    align-items: center;  
+  }
