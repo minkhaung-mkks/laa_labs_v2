@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import ExperienceMenu from "@/components/ExperienceMenu";
 import HomePage from "@/components/Home";
-import useUserStore from "@/store/userStore";
+import useUserStore from "@/stores/userStore";
 
 export default function Home() {
   const { userPreferences, setUserPreferences } = useUserStore();

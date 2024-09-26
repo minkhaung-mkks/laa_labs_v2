@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Navbar.module.css";
-
+import useUserStore from "@/stores/userStore";
 const Navbar = () => {
   const { userPreferences } = useUserStore();
   const [weather, setWeather] = useState("");
