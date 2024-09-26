@@ -4,28 +4,16 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
-  const [name, setName] = useState("");
+  const { userPreferences } = useUserStore();
   const [weather, setWeather] = useState("");
-  const [weatherMain,setWeatherMain] = useState("");
-  const [weatherIcon,setWeatherIcon] = useState("");
-  const [weatherTemp,setWeatherTemp] = useState("");
-  const [location, setLocation] = useState("");
+  const [weatherMain, setWeatherMain] = useState("");
+  const [weatherIcon, setWeatherIcon] = useState("");
+  const [weatherTemp, setWeatherTemp] = useState("");
 
   useEffect(() => {
-    // Get the name and location from localStorage
-    const storedPreferences = localStorage.getItem("userPreferences");
-    if (storedPreferences) {
-      const { name, location } = JSON.parse(storedPreferences);
-      setName(name);
-      setLocation(location);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Fetch the weather data for the user's location
-    if (location) {
+    if (userPreferences && userPreferences.location) {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=4c121fd61dc55282f30ad5e7cdb92a31&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${userPreferences.location}&appid=4c121fd61dc55282f30ad5e7cdb92a31&units=metric`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -44,7 +32,7 @@ const Navbar = () => {
           setWeather("Error fetching weather");
         });
     }
-  }, [location]);
+  }, [userPreferences]);
 
   return (
     <nav className={styles.nav}>
@@ -102,8 +90,8 @@ const Navbar = () => {
       <div className={styles.weather}>
         <img src={`http://openweathermap.org/img/wn/${weatherIcon}.png`} alt="weather icon" />
         <p>
-          Hello, {name || "Guest"}! <br />
-          {weather ? `${location}: ${weatherTemp}°C` : "Loading weather..."}
+          Hello, {userPreferences?.name || "Guest"}! <br />
+          {weather ? `${userPreferences?.location}: ${weatherTemp}°C` : "Loading weather..."}
         </p>
         <Link className={styles.contactButton} href="/">contact</Link>
       </div>
