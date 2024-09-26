@@ -5,6 +5,12 @@
     justify-content: center;
     height: 100vh;
     background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
   }
   
   .experienceMenu form {
