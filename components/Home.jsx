@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import styles from "@/styles/Home.module.css"; // Import the CSS module
+import styles from "@/styles/home.module.css";
 import Footer from "./Footer";
 import Link from "next/link";
 
