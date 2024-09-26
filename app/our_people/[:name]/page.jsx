@@ -72,12 +72,12 @@ const Talent = () => {
           <div className={styles.bento_item}>
             <img src="/004.jpg" alt="" className={styles.bento_image} />
             <h4>Golang</h4>
-            <p>Go's simplicity and performance have made it my preferred language for building microservices. I've designed and implemented highly concurrent APIs that can handle thousands of requests per second. The efficiency of Go never fails to impress me, especially in resource-constrained environments.</p>
+            <p>Go's simplicity and performance have made it my preferred language for building microservices. </p>
           </div>
           <div className={styles.bento_item}>
             <img src="/004.jpg" alt="" className={styles.bento_image} />
             <h4>Python</h4>
-            <p>Python has been my go-to language for data analysis and automation. I've developed machine learning models to predict market trends and created scripts that save hours of manual work. The versatility of Python never ceases to amaze me, and I'm always excited to tackle new challenges with it.</p>
+            <p>Python has been my go-to language for data analysis and automation.</p>
  
           </div>
           <div className={`${styles.bento_item} ${styles.span_2_cols}`}>

@@ -136,6 +136,8 @@
     grid-auto-rows: minmax(100px, auto);
     gap: 1rem;
     padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
   }
   
   .bento_item {
