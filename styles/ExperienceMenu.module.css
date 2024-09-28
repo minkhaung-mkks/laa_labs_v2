@@ -12,13 +12,42 @@
     z-index: 1000;
 
   }
-  
-  .experienceMenu form {
+  .expereinceBg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    position: fixed;
+  }
+  .expereinceTitle{
+    position: relative;
+    z-index: 2;
+  }
+  .experienceForm {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     max-width: 400px;
-    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    /* Border Radius */
+    border-radius: 10px;
+    background-color: white;
+    padding: 10vh 30px;
+    overflow: hidden; 
+    border-radius: 20px;
+  }
+  .expereinceFormGlow{
+    position: absolute;
+    overflow: hidden; 
+    max-width: 400px;
+    z-index: 0;
+    /* Border Radius */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10vh 30px;
+    /* Glow Blur */
+    filter: blur(20px);
   }
   
   .experienceMenu input[type="text"] {
@@ -27,13 +56,54 @@
   }
   
   .experienceMenu button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
+    padding: 1rem 1rem;
+    background-color: #323232;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .experienceMenu button:hover {
     background-color: #0056b3;
+  }
+
+  .experienceForm:before, .expereinceFormGlow:before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*border color, change middle color*/
+    background-image: conic-gradient(rgba(0,0,0,0), #000000, rgba(0,0,0,0) 25%);
+    /* change speed here */
+    animation: rotate 4s linear infinite;
+  }
+  
+  .experienceForm:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* border width */
+    left: 2px;
+    top: 2px;
+    /* double the px from the border width left */
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    /*bg color*/
+    background: #ffffff;
+    /*box border radius*/
+    border-radius: 20px;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: translate(-50%, -50%) rotate(1turn);
+    }
   }

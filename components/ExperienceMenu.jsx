@@ -3,6 +3,7 @@ import styles from "@/styles/ExperienceMenu.module.css";
 import Select from "react-select";
 const citiesList= require("@/data/cities.json");
 export default function ExperienceMenu({ onSubmit }) {
+
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [backgroundMusic, setBackgroundMusic] = useState(false);
@@ -10,7 +11,6 @@ export default function ExperienceMenu({ onSubmit }) {
 
   useEffect(() => {
     // Load cities (you can filter based on country if needed)   
-
     setCities(citiesList.map(city => ({ value: city, label: city })));
   }, []);
 
@@ -21,8 +21,11 @@ export default function ExperienceMenu({ onSubmit }) {
 
   return (
     <div className={styles.experienceMenu}>
-      <h1>Welcome to LAA Labs</h1>
-      <form onSubmit={handleSubmit}>
+      <img className={styles.expereinceBg} src="/bg1.gif" alt="" />
+     
+      <form className={styles.experienceForm} onSubmit={handleSubmit}>
+      {/* <div className={styles.expereinceFormGlow}></div> */}
+      <h1 className={styles.expereinceTitle}>Welcome to LAA Labs</h1>
         <div>
           <label htmlFor="name">What's your name?</label>
           <input
@@ -31,7 +34,7 @@ export default function ExperienceMenu({ onSubmit }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            style={{borderRadius: "5px", border: "1px solid #f0f0f0", padding: "10px"}}
+            style={{borderRadius: "5px", border: "1px solid #c7c7c7", padding: "10px"}}
           />
         </div>
         <div>
@@ -49,6 +52,7 @@ export default function ExperienceMenu({ onSubmit }) {
               type="checkbox"
               checked={backgroundMusic}
               onChange={(e) => setBackgroundMusic(e.target.checked)}
+              style={{marginRight:'6px'}}
             />
             Would you like to experience the website with background music?
           </label>

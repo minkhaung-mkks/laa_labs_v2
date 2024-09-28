@@ -42,7 +42,7 @@ export default function HomePage({userPreferences}) {
       <div className={styles.hero_box}>
         <div className={styles.hero_txt}>
           <h1>laa labs</h1>
-          <span>the lab of everything</span>
+          <span className={styles.subtext}>reaching for timelessness despite the impermanence of space and time </span>
         </div>
         <img
           src="/logo.png"

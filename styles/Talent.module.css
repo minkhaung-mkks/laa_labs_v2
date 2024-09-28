@@ -1,5 +1,5 @@
 .talentPage{
-    width: 95vw;
+    width: 98vw;
     margin: 10px auto;
     border-radius: 20px;
     background-color: white;
@@ -205,4 +205,11 @@
       grid-column: auto;
       grid-row: auto;
     }
+  }
+
+  .featuredProject{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
   }

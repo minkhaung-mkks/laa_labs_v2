@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 const Talent = () => {
   return (
     <div className={styles.talentPage}>
+      <div className={styles.featuredProject}>
+        <h2>Lead Project</h2>
+      </div>
       <div className={styles.content}>
         <div className={styles.content_box}>
           <img src="../004.jpg" alt="" className={styles.profile_pic} />

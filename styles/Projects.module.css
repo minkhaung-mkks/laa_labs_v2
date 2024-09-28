@@ -85,7 +85,6 @@
   .project_card {
     width: 100%;
     margin-bottom: 2rem;
-    border-radius: 10px;
     overflow: hidden;
     position: sticky;
     top: 12vh;
@@ -152,8 +151,8 @@
 
   .projects_page {
     width: 100vw;
-    margin: 10px auto;
-    border-radius: 20px;
+    margin: 0px auto;
+    border-radius: 0px;
     background-color: white;
     padding: 20px 0;
     padding-bottom: 0;

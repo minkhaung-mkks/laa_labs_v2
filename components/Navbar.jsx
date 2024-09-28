@@ -38,10 +38,10 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <img src="/logo.png" alt="" className={styles.logo} />
       <div className={styles.navLinks}>
-        <Link href="/">home</Link>
+        {/* <Link href="/">home</Link> */}
         <Link href="/projects">projects</Link>
         <div className={styles.dropdown}>
-          <Link href="/" className={styles.dropdownToggle}>
+          <Link href="#" className={styles.dropdownToggle}>
             talents
           </Link>
           <svg
@@ -83,7 +83,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <Link href="/about">about</Link>
+        <Link href="/about">article</Link>
+        <Link href="/about">about us</Link>
         
       </div>
       

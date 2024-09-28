@@ -1,6 +1,6 @@
 .home{
-  width: 95vw;
-  margin: 10px auto;
+  width: 97vw;
+  margin: 1vw auto;
   background-color: rgb(255, 255, 255);
   border-radius: 20px 20px 0 0;
 }
@@ -74,6 +74,13 @@
   justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 1px rgb(200, 200, 200) solid;
+}
+
+.subtext{
+  width: 55vw;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 2.25vw !important;
 }
 
 .info{

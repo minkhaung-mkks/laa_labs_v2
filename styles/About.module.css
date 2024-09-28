@@ -1,7 +1,8 @@
 .about_us_page { 
-  width: 95vw;
+  width: 98vw;
     margin: 10px auto;
     padding: 2rem;
+    padding-bottom: 0;
     background-color: white;
     border-radius: 20px;
   }
@@ -69,6 +70,9 @@
   
   .text_box {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .big_img_box img {
